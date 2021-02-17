@@ -11,5 +11,5 @@ Copyright 2021 Eslam A. Hussein, Christopher Thron, Mehrdad Ghaziasgar, Antoine 
 
 
 If you have any questions for this code, please contact Eslam A. Hussein at eslamhuss34@gmail.com    
-This code is wriiten and tested on python Jupyter notebook.
-Date: 19/10/2020
+This code is wriiten using python.
+Date: 17/02/2021
