@@ -1,0 +1,1621 @@
+Submitting SLURM job
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 60.7min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 61.7min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 72.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 70.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 101.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 101.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 62.8min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 63.7min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 74.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 72.1min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 102.2min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 101.2min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 62.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 62.1min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 73.2min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 73.3min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 102.0min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 102.3min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 59.0min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 59.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 66.3min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 65.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 87.8min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 86.1min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 57.7min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 58.0min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 64.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 66.1min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 86.9min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 2400 out of 2400 | elapsed: 85.2min finished
+Best parameters & score set found on development set:
+
+-0.13545909260694788
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 80}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.6483390773808186
+MSE: 36.20469727134377
+RMSE: 6.017033926391289
+r2score: -0.00048438663585326225
+
+--- 3642.607374191284 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.13453567953986
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.676994880705441
+MSE: 37.80557159503467
+RMSE: 6.148623552880325
+r2score: -0.04472311493718584
+
+--- 3701.0428578853607 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.13288271603323273
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 10, 'n_estimators': 80}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.6798762382237182
+MSE: 37.90361285965747
+RMSE: 6.1565910096138
+r2score: -0.047432397485966726
+
+--- 4347.794136285782 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.13360751650739386
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 40}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.6391123898450717
+MSE: 36.86022695354009
+RMSE: 6.071262385496125
+r2score: -0.018599362355671945
+
+--- 4235.314511060715 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.13137492653821806
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 15, 'n_estimators': 20}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.6596445664063557
+MSE: 36.79150791431618
+RMSE: 6.065600375421726
+r2score: -0.016700373246804068
+
+--- 6099.016157865524 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.13111693185807893
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 20}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.6442074965042552
+MSE: 37.19981563720085
+RMSE: 6.099165159036182
+r2score: -0.02798359151617169
+
+--- 6091.018877029419 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.1524614875895992
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 160}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.983107746600987
+MSE: 37.83714383676725
+RMSE: 6.151190440619381
+r2score: 0.11838724694091651
+
+--- 3773.6555082798004 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.16214545816703047
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 2, 'n_estimators': 20}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.286078666384583
+MSE: 46.12255637792951
+RMSE: 6.791358949277347
+r2score: -0.07466446415431527
+
+--- 3825.8907964229584 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.1513200660007276
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 80}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.064233233506633
+MSE: 39.86794330101629
+RMSE: 6.31410669065833
+r2score: 0.07106922752826306
+
+--- 4477.475863456726 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.1478338495065272
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 10, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.950407497526158
+MSE: 37.37694005034649
+RMSE: 6.113668297376502
+r2score: 0.1291100839728272
+
+--- 4324.418333530426 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.1494898111012254
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 20}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.070423881221168
+MSE: 40.68571672507986
+RMSE: 6.378535625445691
+r2score: 0.052014948936900174
+
+--- 6130.992799520493 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.14750976244606662
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 40}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.9875436460172238
+MSE: 38.81461516305838
+RMSE: 6.230137652015273
+r2score: 0.09561197640978147
+
+--- 6075.11562204361 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.0977721366474359
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.119776215601895
+MSE: 16.427274885144147
+RMSE: 4.053057473703543
+r2score: -0.006498715396233035
+
+--- 3749.295564889908 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09990261027769787
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 2, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.139224741126206
+MSE: 16.496288952619867
+RMSE: 4.061562378275123
+r2score: -0.010727205559345698
+
+--- 3726.2191383838654 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09814566798909503
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 15, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.1079327311865868
+MSE: 16.324516300975343
+RMSE: 4.040360912217539
+r2score: -0.00020269955154961217
+
+--- 4391.44007563591 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.095712510175883
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 15, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.0310029668188787
+MSE: 15.369866873795269
+RMSE: 3.9204421783512213
+r2score: 0.05828864662902922
+
+--- 4397.209072113037 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09600603074595354
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 15, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.0786101994231845
+MSE: 16.091243661405713
+RMSE: 4.011389243317795
+r2score: 0.014089909155951319
+
+--- 6119.455677747726 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09554388383048275
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 15, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.035677197667784
+MSE: 15.459895834722847
+RMSE: 3.931907404138969
+r2score: 0.052772574477341405
+
+--- 6138.047623634338 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.0598404090699147
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 40}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.2813705816502092
+MSE: 5.10276933901284
+RMSE: 2.2589310168778596
+r2score: 0.024530932147429296
+
+--- 3543.7108719348907 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.061889312087779175
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 2, 'n_estimators': 20}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.3062582608682392
+MSE: 5.238964303830456
+RMSE: 2.288878394286262
+r2score: -0.001504729382698855
+
+--- 3562.9355449676514 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.05999193558411572
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 80}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.260130664585235
+MSE: 5.055709862619499
+RMSE: 2.2484905742785535
+r2score: 0.03352704004908935
+
+--- 3979.400609731674 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.058425529480094274
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 15, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.2784463459235536
+MSE: 5.072726664641446
+RMSE: 2.252271445594746
+r2score: 0.030274029202749353
+
+--- 3937.483950138092 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.05908941655183351
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 40}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.2427236449824675
+MSE: 5.072049579850877
+RMSE: 2.2521211290361087
+r2score: 0.030403463873539427
+
+--- 5267.144316673279 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.058070690238953164
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.2481217349264055
+MSE: 4.985030495396701
+RMSE: 2.2327181853957074
+r2score: 0.04703843589724488
+
+--- 5167.439348220825 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.0960081416903677
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.0662679334259613
+MSE: 14.31805196990861
+RMSE: 3.783920185456957
+r2score: -0.026063845563931265
+
+--- 3462.8582570552826 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09602876932252619
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.107907397021272
+MSE: 14.596808808661422
+RMSE: 3.820577025615558
+r2score: -0.0460401883338184
+
+--- 3480.700476884842 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09343711314910118
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 15, 'n_estimators': 10}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.0734058386999257
+MSE: 14.3331000885075
+RMSE: 3.7859080929821185
+r2score: -0.027142227628092597
+
+--- 3870.4090979099274 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.0937860205154928
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 2, 'n_estimators': 80}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.054169091293971
+MSE: 14.309025104832791
+RMSE: 3.7827272046544396
+r2score: -0.025416960085896445
+
+--- 3967.4698033332825 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09091015993765116
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 15, 'n_estimators': 40}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.084551276725979
+MSE: 14.588985797314747
+RMSE: 3.8195530886891396
+r2score: -0.045479573724853006
+
+--- 5213.749841928482 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10]) features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0,
+                                             criterion='mse', max_depth=None,
+                                             max_features='auto',
+                                             max_leaf_nodes=None,
+                                             max_samples=None,
+                                             min_impurity_decrease=0.0,
+                                             min_impurity_split=None,
+                                             min_samples_leaf=1,
+                                             min_samples_split=2,
+                                             min_weight_fraction_leaf=0.0,
+                                             n_e...
+                                             oob_score=False, random_state=None,
+                                             verbose=0, warm_start=False),
+             iid='deprecated', n_jobs=1,
+             param_grid={'max_depth': [5, 10, 15, 30, None],
+                         'max_features': ['auto', 'sqrt'],
+                         'min_samples_leaf': [1, 2, 5, 10],
+                         'min_samples_split': [2, 5, 10, 15],
+                         'n_estimators': [10, 20, 40, 80, 160]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 800 candidates, totalling 2400 fits
+Best parameters & score set found on development set:
+
+-0.09206385117772213
+{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 160}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.068813051938293
+MSE: 14.37712758112878
+RMSE: 3.7917182887351717
+r2score: -0.03029733689047487
+
+--- 5116.673667669296 seconds ---
+

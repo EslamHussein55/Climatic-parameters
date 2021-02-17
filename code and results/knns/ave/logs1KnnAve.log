@@ -1,0 +1,1321 @@
+Submitting SLURM job
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.14107563923246438
+{'algorithm': 'auto', 'leaf_size': 2, 'n_jobs': -1, 'n_neighbors': 7, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.807175383688777
+MSE: 41.83027940240997
+RMSE: 6.4676332148947635
+r2score: -0.1559423109401734
+
+--- 13780.959473371506 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 200.7min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.13322388551137873
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.3608965877006796
+MSE: 45.62455480728172
+RMSE: 6.754595088329257
+r2score: -0.2607937138595193
+
+--- 13502.947844266891 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 203.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.1392994344953817
+{'algorithm': 'auto', 'leaf_size': 2, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.77177710733399
+MSE: 41.474264275105945
+RMSE: 6.4400515739476765
+r2score: -0.14610415171999436
+
+--- 15510.220635175705 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([10, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 226.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.1473034565195769
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.864507277332635
+MSE: 41.746614424138855
+RMSE: 6.461162002622969
+r2score: -0.15363030419029977
+
+--- 15058.256017446518 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 228.3min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.14727458370308413
+{'algorithm': 'auto', 'leaf_size': 2, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.9109635264852196
+MSE: 46.87800232629944
+RMSE: 6.846751224215718
+r2score: -0.29543161354546044
+
+--- 20969.27448773384 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 310.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.1488742898090797
+{'algorithm': 'auto', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.9784754294259774
+MSE: 50.17142413236732
+RMSE: 7.083178956680914
+r2score: -0.3864423757921869
+
+--- 22319.345187187195 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 308.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.15946784827329644
+{'algorithm': 'auto', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.2257326962884387
+MSE: 42.03962400278974
+RMSE: 6.483797035903402
+r2score: 0.020468648094586706
+
+--- 12038.43687582016 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 163.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.16317161981715148
+{'algorithm': 'auto', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 4.19112913638519
+MSE: 52.27734914009732
+RMSE: 7.230307679490363
+r2score: -0.21807232324039605
+
+--- 12088.440600633621 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 165.1min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.1584609311180548
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.177086315242985
+MSE: 42.754466304919426
+RMSE: 6.538689953264295
+r2score: 0.0038126845075242555
+
+--- 11848.791706085205 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([10, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 179.0min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.15432416449672906
+{'algorithm': 'auto', 'leaf_size': 3, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.1140353505510756
+MSE: 40.59019318294605
+RMSE: 6.371043335509974
+r2score: 0.0542406659023732
+
+--- 11978.697834730148 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 173.8min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.16334849152642247
+{'algorithm': 'auto', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.3098687386016534
+MSE: 48.741140367248704
+RMSE: 6.981485541577
+r2score: -0.1356779764294367
+
+--- 18839.832208395004 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 259.9min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.16238737583828508
+{'algorithm': 'auto', 'leaf_size': 2, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.216377001211472
+MSE: 45.4647602960782
+RMSE: 6.742756134999856
+r2score: -0.059337688508292796
+
+--- 17467.51326394081 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 257.6min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10118600917703796
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 5, 'weights': 'distance'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.3168733443810163
+MSE: 19.52111104182576
+RMSE: 4.418270141336512
+r2score: -0.19605797821483506
+
+--- 11291.217010259628 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 172.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10680193823702826
+{'algorithm': 'auto', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'distance'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.5335880271280016
+MSE: 18.83443712895796
+RMSE: 4.339866026613951
+r2score: -0.1539854849967075
+
+--- 12745.209294080734 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 174.7min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10456525427369484
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.3378199675667317
+MSE: 19.866962195042262
+RMSE: 4.457237058430061
+r2score: -0.21724826959697507
+
+--- 11887.063650608063 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([10, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 179.8min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10405561860329708
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.238658041705553
+MSE: 17.589227878807513
+RMSE: 4.193951344353856
+r2score: -0.07769154583523763
+
+--- 11987.647629022598 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 181.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10836894990332306
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.386145260203739
+MSE: 21.78028763996723
+RMSE: 4.666935572725129
+r2score: -0.3344776710598709
+
+--- 17355.12119793892 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 266.3min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.1089924666605413
+{'algorithm': 'auto', 'leaf_size': 2, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.416499741245361
+MSE: 22.105087439982626
+RMSE: 4.701604772839017
+r2score: -0.35437814656552424
+
+--- 17706.90037703514 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 262.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.06421572305215478
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 5, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.344532028854694
+MSE: 5.870458889355707
+RMSE: 2.422902988019889
+r2score: -0.12222416500105093
+
+--- 12289.910912513733 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 185.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.06663859778272335
+{'algorithm': 'auto', 'leaf_size': 2, 'n_jobs': -1, 'n_neighbors': 7, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.3144603856619226
+MSE: 5.7921720876472484
+RMSE: 2.4066931851915085
+r2score: -0.10725849667192322
+
+--- 12771.356534957886 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 186.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.0650954991440742
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 8, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.399357264956326
+MSE: 6.389808176182861
+RMSE: 2.5278069895035222
+r2score: -0.22150538487472593
+
+--- 12776.567702770233 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([10, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 193.9min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.06536836356643094
+{'algorithm': 'auto', 'leaf_size': 3, 'n_jobs': -1, 'n_neighbors': 9, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.378316760968314
+MSE: 6.125075744751298
+RMSE: 2.474889036856258
+r2score: -0.1708979047081134
+
+--- 13005.003059387207 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 188.9min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.07187547498309281
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.395271422662021
+MSE: 6.8382140527291355
+RMSE: 2.614997906830737
+r2score: -0.307224733203888
+
+--- 17728.216222524643 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 271.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.0684166649885765
+{'algorithm': 'auto', 'leaf_size': 3, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.4430943991296554
+MSE: 7.150518083666974
+RMSE: 2.6740452658223597
+r2score: -0.3669262211030977
+
+--- 18337.506150245667 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 271.8min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10664952521339464
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.569044936565179
+MSE: 15.230145698007941
+RMSE: 3.9025819271359237
+r2score: -0.09142653597287764
+
+--- 10833.480397224426 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 162.5min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.09745591659137576
+{'algorithm': 'auto', 'leaf_size': 3, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.2194164741931606
+MSE: 16.60915413950296
+RMSE: 4.075433000247085
+r2score: -0.19024938614266462
+
+--- 11164.662140369415 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 162.0min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10184667585317612
+{'algorithm': 'auto', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.215929079213445
+MSE: 16.653560543160904
+RMSE: 4.080877423197235
+r2score: -0.19343164902316645
+
+--- 12490.778429746628 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([10, 11], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 166.9min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10249239325926833
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.2268152139836874
+MSE: 16.749430578163075
+RMSE: 4.092606819395564
+r2score: -0.20030191161163935
+
+--- 11030.314845085144 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 166.0min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.10602897164177423
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.413101445696164
+MSE: 20.098673543798302
+RMSE: 4.483154418910674
+r2score: -0.4403162043569089
+
+--- 15937.562487840652 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10], features, MonthAhead:  0
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=KNeighborsRegressor(algorithm='auto', leaf_size=30,
+                                           metric='minkowski',
+                                           metric_params=None, n_jobs=None,
+                                           n_neighbors=5, p=2,
+                                           weights='uniform'),
+             iid='deprecated', n_jobs=1,
+             param_grid={'algorithm': ['auto'], 'leaf_size': [1, 2, 3, 5],
+                         'n_jobs': [-1], 'n_neighbors': [3, 5, 6, 7, 8, 9, 10],
+                         'weights': ['uniform', 'distance']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 56 candidates, totalling 168 fits
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 241.4min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 168 out of 168 | elapsed: 241.0min finished
+Best parameters & score set found on development set:
+
+-0.10767221875659422
+{'algorithm': 'auto', 'leaf_size': 5, 'n_jobs': -1, 'n_neighbors': 10, 'weights': 'uniform'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.415814751210829
+MSE: 19.9192574655717
+RMSE: 4.463099535700688
+r2score: -0.4274588441819296
+
+--- 15827.911330223083 seconds ---
+

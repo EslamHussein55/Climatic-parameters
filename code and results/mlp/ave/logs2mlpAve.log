@@ -1,0 +1,1735 @@
+Submitting SLURM job
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   53.7s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  4.0min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  8.0min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 13.8min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 19.8min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 28.0min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 36.6min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 46.7min
+Best parameters & score set found on development set:
+
+-0.13833782667043856
+{'activation': 'tanh', 'alpha': 0.00015241579027587258, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.3333333333333333, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.7980281317768507
+MSE: 37.31989183028936
+RMSE: 6.109000886420738
+r2score: -0.03130178958012331
+
+--- 3505.3543734550476 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 58.1min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   48.8s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.7min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 13.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 19.4min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 27.5min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 35.8min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 45.9min
+Best parameters & score set found on development set:
+
+-0.1378179996713971
+{'activation': 'relu', 'alpha': 0.3333333333333333, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.1111111111111111, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.958756610662965
+MSE: 41.49133832225984
+RMSE: 6.441377051707177
+r2score: -0.14657597772274022
+
+--- 3412.357943534851 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 56.6min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   58.7s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  5.2min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed: 10.4min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 17.9min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 25.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 36.5min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 47.2min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 60.9min
+Best parameters & score set found on development set:
+
+-0.1389836476770506
+{'activation': 'tanh', 'alpha': 0.3333333333333333, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.00411522633744856, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.910681489341323
+MSE: 38.829789899331566
+RMSE: 6.231355382204707
+r2score: -0.07302647055636857
+
+--- 4559.135202169418 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 75.7min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   56.9s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  9.8min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 16.8min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 24.0min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 34.3min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 44.9min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 57.7min
+Best parameters & score set found on development set:
+
+-0.13909845018927194
+{'activation': 'relu', 'alpha': 0.00411522633744856, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.8811005301312234
+MSE: 40.72052665440295
+RMSE: 6.38126371923328
+r2score: -0.12527528756787576
+
+--- 4295.328722715378 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 71.3min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:  1.2min
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  5.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed: 11.7min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 19.9min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 28.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 40.9min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 53.4min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 68.4min
+Best parameters & score set found on development set:
+
+-0.14077848297655482
+{'activation': 'tanh', 'alpha': 0.037037037037037035, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.945786200898667
+MSE: 39.06559805032077
+RMSE: 6.250247839111724
+r2score: -0.07954281763525728
+
+--- 5149.5827293396 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 85.5min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:  1.2min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  5.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed: 11.9min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 20.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 29.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 42.2min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 54.9min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 70.5min
+Best parameters & score set found on development set:
+
+-0.14343168376457974
+{'activation': 'tanh', 'alpha': 0.3333333333333333, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.037037037037037035, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.9859615592639246
+MSE: 44.062071132022844
+RMSE: 6.637926719392347
+r2score: -0.2176158767475591
+
+--- 5228.855439424515 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 86.9min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   53.8s
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.6min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 13.1min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 18.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 26.7min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 34.8min
+Best parameters & score set found on development set:
+
+-0.15788235443534362
+{'activation': 'tanh', 'alpha': 0.00411522633744856, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.1560693595501896
+MSE: 36.378362236628874
+RMSE: 6.0314477728509654
+r2score: 0.15237713973404565
+
+--- 3348.4117515087128 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 44.5min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 55.5min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   51.3s
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.7min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.3min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 12.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 18.2min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 25.6min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 33.6min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 43.1min
+Best parameters & score set found on development set:
+
+-0.16590914609399765
+{'activation': 'tanh', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.1111111111111111, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.506471213412002
+MSE: 50.637189785966285
+RMSE: 7.115981294661073
+r2score: -0.17985629377767598
+
+--- 3215.062481880188 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 53.3min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   57.3s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  4.5min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  9.1min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 15.9min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 22.8min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 32.3min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 42.2min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 54.0min
+Best parameters & score set found on development set:
+
+-0.15956653913278046
+{'activation': 'tanh', 'alpha': 0.00411522633744856, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.213476113514144
+MSE: 41.131001604101215
+RMSE: 6.413345585893623
+r2score: 0.04163972532638727
+
+--- 3994.741887807846 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 66.3min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:  1.0min
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  9.6min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 16.6min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 23.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 33.9min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 44.2min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 56.8min
+Best parameters & score set found on development set:
+
+-0.15545893675652767
+{'activation': 'relu', 'alpha': 0.0004572473708276177, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.012345679012345678, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.2389246441079615
+MSE: 38.10670529642352
+RMSE: 6.17306287805523
+r2score: 0.11210641291202073
+
+--- 4215.466948747635 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 69.9min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:  1.2min
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  5.7min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed: 11.1min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 19.3min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 27.7min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 38.9min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 51.1min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 65.3min
+Best parameters & score set found on development set:
+
+-0.15975928974335643
+{'activation': 'relu', 'alpha': 0.00015241579027587258, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.00411522633744856, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.29889192353994
+MSE: 44.30690583353023
+RMSE: 6.6563432779214615
+r2score: -0.03235945609274915
+
+--- 4902.076752662659 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 81.4min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:  1.1min
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  5.7min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed: 11.4min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 19.4min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 28.0min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 39.4min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 51.7min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 66.3min
+Best parameters & score set found on development set:
+
+-0.15783947935485124
+{'activation': 'tanh', 'alpha': 0.012345679012345678, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.0812370180182462
+MSE: 38.349390494143826
+RMSE: 6.192688470619512
+r2score: 0.10645180097270768
+
+--- 4944.340510845184 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+Best parameters & score set found on development set:
+
+-0.09960274582264174
+{'activation': 'relu', 'alpha': 0.037037037037037035, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.1111111111111111, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.2398237848080003
+MSE: 16.86767922710997
+RMSE: 4.107028028527438
+r2score: -0.03348227825390371
+
+--- 2604.6685919761658 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 82.1min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   49.1s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.2min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.2min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 10.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 15.2min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 21.2min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 27.6min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 35.3min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 43.2min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   46.9s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.2min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.2min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 10.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 15.2min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 21.3min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 27.8min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 35.6min
+Best parameters & score set found on development set:
+
+-0.10068056180679519
+{'activation': 'tanh', 'alpha': 0.1111111111111111, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.1111111111111111, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.3164172127358276
+MSE: 16.984828192306328
+RMSE: 4.121265363005193
+r2score: -0.040659992379011856
+
+--- 2627.100733757019 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 43.5min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   51.1s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.5min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.9min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 11.8min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 17.1min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 23.8min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 31.1min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 39.7min
+Best parameters & score set found on development set:
+
+-0.10092290999684228
+{'activation': 'tanh', 'alpha': 0.1111111111111111, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.00411522633744856, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.2533014704933065
+MSE: 17.894196946864465
+RMSE: 4.23015330063397
+r2score: -0.0963769928969711
+
+--- 2951.9449293613434 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 48.8min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   52.3s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.5min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.0min
+Best parameters & score set found on development set:
+
+-0.09807129773929397
+{'activation': 'tanh', 'alpha': 0.1111111111111111, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.00411522633744856, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.1412190465345406
+MSE: 15.83755125202684
+RMSE: 3.979642100996877
+r2score: 0.029633636641544503
+
+--- 2991.5639123916626 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 11.9min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 17.1min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 24.1min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 31.5min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 40.3min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 49.6min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   58.6s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.8min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.5min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 12.6min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 18.4min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 25.7min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 33.7min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 43.0min
+Best parameters & score set found on development set:
+
+-0.10008425889042881
+{'activation': 'relu', 'alpha': 0.012345679012345678, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.1111111111111111, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.3518689164047726
+MSE: 18.705442094259713
+RMSE: 4.324978854776022
+r2score: -0.14608196249379413
+
+--- 3196.3999938964844 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 53.0min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   58.3s
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.5min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 12.7min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 18.5min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 25.7min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 33.8min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 43.2min
+Best parameters & score set found on development set:
+
+-0.10055720289660214
+{'activation': 'tanh', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.00411522633744856, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.300338908887697
+MSE: 19.19804115810792
+RMSE: 4.3815569331126945
+r2score: -0.17626349463683866
+
+--- 3192.8600475788116 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 52.9min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   43.3s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  2.8min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  5.4min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed:  9.1min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 13.2min
+Best parameters & score set found on development set:
+
+-0.06218040765943119
+{'activation': 'relu', 'alpha': 0.3333333333333333, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.3333333333333333, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.3493895825297937
+MSE: 5.002847508773209
+RMSE: 2.2367046091903173
+r2score: 0.04363245293473417
+
+--- 2276.9131767749786 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 18.4min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 24.1min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 30.8min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 37.7min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   42.4s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  2.7min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  5.4min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed:  9.0min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 13.1min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+Best parameters & score set found on development set:
+
+-0.0638106961450368
+{'activation': 'relu', 'alpha': 0.0004572473708276177, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.037037037037037035, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.399051936974444
+MSE: 5.251656820746227
+RMSE: 2.291649366885394
+r2score: -0.003931089819936284
+
+--- 2266.300758123398 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 18.3min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 24.0min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 30.7min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 37.5min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   43.8s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  2.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  5.7min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed:  9.6min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 13.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 19.5min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 25.4min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 32.5min
+Best parameters & score set found on development set:
+
+-0.0641482460158046
+{'activation': 'relu', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.012345679012345678, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.426337875047744
+MSE: 5.6354908204174325
+RMSE: 2.373918874017693
+r2score: -0.07730657849954592
+
+--- 2399.965861558914 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 39.7min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   44.1s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  2.9min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  5.7min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed:  9.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 13.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 19.4min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 25.3min
+Best parameters & score set found on development set:
+
+-0.0630447247046072
+{'activation': 'relu', 'alpha': 0.0004572473708276177, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.4299274834394853
+MSE: 5.706497279562557
+RMSE: 2.388827595194462
+r2score: -0.09088050275754589
+
+--- 2395.130797624588 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 32.4min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 39.7min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   47.6s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.1min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.1min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 10.3min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 15.1min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 21.0min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 27.5min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 35.3min
+Best parameters & score set found on development set:
+
+-0.06457683283952509
+{'activation': 'relu', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.012345679012345678, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.4185442346210784
+MSE: 5.548854514277965
+RMSE: 2.3556006695274063
+r2score: -0.06074478015488349
+
+--- 2608.7301785945892 seconds ---
+
+Temp
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 43.2min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   46.0s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.1min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.1min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 10.2min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 14.9min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 20.8min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 27.1min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 34.8min
+Best parameters & score set found on development set:
+
+-0.06435522124704869
+{'activation': 'tanh', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.00411522633744856, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 1.3263248370385718
+MSE: 5.544663895753091
+RMSE: 2.3547110004739626
+r2score: -0.05994368206978473
+
+--- 2568.485893726349 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 42.5min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   44.4s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.0min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  5.9min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 10.1min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 14.6min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 20.5min
+Best parameters & score set found on development set:
+
+-0.09647914837277582
+{'activation': 'relu', 'alpha': 0.00411522633744856, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.1111111111111111, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.1855752143456124
+MSE: 14.327472659889374
+RMSE: 3.785164812777559
+r2score: -0.02673895342146948
+
+--- 2537.083440065384 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 26.8min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 34.3min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 42.0min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   44.7s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.1min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.0min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 10.1min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 14.7min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 20.6min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 26.8min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 34.2min
+Best parameters & score set found on development set:
+
+-0.0960550794060991
+{'activation': 'relu', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.1111111111111111, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.2274572732097644
+MSE: 14.473238794602281
+RMSE: 3.8043710116919827
+r2score: -0.03718488287128929
+
+--- 2531.002984046936 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([0, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 41.9min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   46.4s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.4min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.6min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+Best parameters & score set found on development set:
+
+-0.09734128236034807
+{'activation': 'relu', 'alpha': 0.0013717421124828531, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.3333333333333333, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.132024762140606
+MSE: 15.104135062767071
+RMSE: 3.886403872832451
+r2score: -0.08239633010067293
+
+--- 2848.10142326355 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 5)
+(604800,)
+(436800, 5)
+(436800,)
+(168000, 5)
+
+Heloo every one,this is a grid search on ([10, 11] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+Best parameters & score set found on development set:
+
+-0.0981686195122561
+{'activation': 'tanh', 'alpha': 0.037037037037037035, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.00411522633744856, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.1161346212502767
+MSE: 14.600943189474934
+RMSE: 3.8211180548989763
+r2score: -0.04633646737271668
+
+--- 2801.797305583954 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 11.3min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 16.3min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 23.1min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 30.0min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 38.5min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 47.2min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   46.7s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  6.6min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 11.2min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 16.2min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 22.8min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 29.6min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 37.8min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 46.4min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   52.4s
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.7min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.2min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 12.2min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 17.7min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 24.9min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 32.5min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 41.5min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 51.1min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 48 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 104 tasks      | elapsed:   51.6s
+[Parallel(n_jobs=-1)]: Done 354 tasks      | elapsed:  3.7min
+[Parallel(n_jobs=-1)]: Done 704 tasks      | elapsed:  7.4min
+[Parallel(n_jobs=-1)]: Done 1154 tasks      | elapsed: 12.5min
+[Parallel(n_jobs=-1)]: Done 1704 tasks      | elapsed: 18.1min
+[Parallel(n_jobs=-1)]: Done 2354 tasks      | elapsed: 25.5min
+[Parallel(n_jobs=-1)]: Done 3104 tasks      | elapsed: 33.2min
+[Parallel(n_jobs=-1)]: Done 3954 tasks      | elapsed: 42.6min
+[Parallel(n_jobs=-1)]: Done 4800 out of 4800 | elapsed: 52.4min finished
+Best parameters & score set found on development set:
+
+-0.0981592663094284
+{'activation': 'tanh', 'alpha': 0.1111111111111111, 'layer1': 8, 'learning_rate': 'adaptive', 'learning_rate_init': 0.00411522633744856, 'solver': 'adam'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.3098151559817888
+MSE: 16.393848638280826
+RMSE: 4.0489317897787345
+r2score: -0.17482010909999568
+
+--- 3081.4522576332092 seconds ---
+
+Wind
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 7)
+(604800,)
+(436800, 7)
+(436800,)
+(168000, 7)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, MonthAhead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=MLPWrapper(activation='relu', alpha=0.0001,
+                                  batch_size=100, early_stopping=True,
+                                  layer1=10, learning_rate='constant',
+                                  learning_rate_init=0.001, max_iter=500,
+                                  solver='sgd', verbose=False),
+             iid='deprecated', n_jobs=-1,
+             param_grid={'activation': ['tanh', 'relu'],
+                         'alpha': array(...634e-03,
+       1.23456790e-02, 3.70370370e-02, 1.11111111e-01, 3.33333333e-01]),
+                         'layer1': [8, 16, 32, 64, 128],
+                         'learning_rate': ['constant', 'adaptive'],
+                         'learning_rate_init': array([0.00411523, 0.01234568, 0.03703704, 0.11111111, 0.33333333]),
+                         'solver': ['sgd', 'adam']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 1600 candidates, totalling 4800 fits
+Best parameters & score set found on development set:
+
+-0.0981250972252336
+{'activation': 'relu', 'alpha': 0.00015241579027587258, 'layer1': 8, 'learning_rate': 'constant', 'learning_rate_init': 0.012345679012345678, 'solver': 'sgd'}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.2665430467294514
+MSE: 16.145089342004677
+RMSE: 4.018095238045594
+r2score: -0.15699345777247498
+
+--- 3161.1280941963196 seconds ---
+

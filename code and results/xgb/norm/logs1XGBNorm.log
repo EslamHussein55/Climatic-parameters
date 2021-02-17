@@ -1,0 +1,855 @@
+Submitting SLURM job
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.34977856036514804
+{'gamma': 0.0, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 600}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 4.657105702437414
+MSE: 93.82895138103922
+RMSE: 9.686534539299346
+r2score: 0.8793966044156777
+
+--- 8170.321152925491 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+Best parameters & score set found on development set:
+
+-0.23358331123960682
+{'gamma': 0.0, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 200}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.868196276383429
+MSE: 43.665666899979904
+RMSE: 6.608000219429469
+r2score: 0.943874170806776
+
+--- 8093.293050527573 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 17.1min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 40.4min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 77.4min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 121.0min
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 134.8min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 16.7min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 39.7min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 76.8min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 120.6min
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 134.5min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.8min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 23.6min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 58.6min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 108.8min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 165.7min
+Best parameters & score set found on development set:
+
+-0.2281340770333488
+{'gamma': 0.4, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.883762105545342
+MSE: 43.94476241563268
+RMSE: 6.629084583532833
+r2score: 0.9435154343359463
+
+--- 11123.616352796555 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 185.3min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  4.7min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 31.9min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 82.3min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 155.1min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 235.0min
+Best parameters & score set found on development set:
+
+-0.21813208984284185
+{'gamma': 0.2, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.5990450815654516
+MSE: 36.45537673280979
+RMSE: 6.0378288094984764
+r2score: 0.9531419443938172
+
+--- 15823.829849004745 seconds ---
+
+Rain
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 263.5min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 31.8min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 82.3min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 154.7min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 234.7min
+Best parameters & score set found on development set:
+
+-0.21655434364351653
+{'gamma': 0.0, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.6337939021227834
+MSE: 36.78089791321242
+RMSE: 6.06472570799475
+r2score: 0.9527235345201766
+
+--- 15828.174761533737 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 263.7min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+Best parameters & score set found on development set:
+
+-0.36830483296486977
+{'gamma': 0.0, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 300}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 6.503196398443819
+MSE: 145.65386317404167
+RMSE: 12.068714230357834
+r2score: 0.9440283835205578
+
+--- 8082.9754729270935 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+Best parameters & score set found on development set:
+
+-0.22681962047612717
+{'gamma': 0.0, 'max_depth': 10, 'min_child_weight': 5, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.474710402612645
+MSE: 48.915704398385344
+RMSE: 6.99397629381065
+r2score: 0.9812027570931182
+
+--- 8140.527361392975 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 16.4min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 38.2min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 75.9min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 120.0min
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 134.0min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 16.9min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 39.4min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 77.2min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 121.5min
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 135.5min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.8min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 23.9min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 60.0min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 111.9min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 171.0min
+Best parameters & score set found on development set:
+
+-0.21256330217009545
+{'gamma': 0.2, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 300}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.3841312719188803
+MSE: 46.69386915282078
+RMSE: 6.833291238694629
+r2score: 0.9820565601267984
+
+--- 11516.312254190445 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 191.3min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 32.1min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 82.9min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 157.6min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 240.3min
+Best parameters & score set found on development set:
+
+-0.19488351029794218
+{'gamma': 0.4, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 3.0298794752876703
+MSE: 39.26754008874437
+RMSE: 6.266381738191854
+r2score: 0.9849103371098912
+
+--- 16236.33170056343 seconds ---
+
+Evap
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 270.4min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 32.3min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 83.4min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 158.6min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 241.6min
+Best parameters & score set found on development set:
+
+-0.19654227054743548
+{'gamma': 0.3, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.9959022649804914
+MSE: 38.385042978261495
+RMSE: 6.195566396889109
+r2score: 0.9852494615844212
+
+--- 16294.083034038544 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([11] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+Best parameters & score set found on development set:
+
+-0.2114287060664656
+{'gamma': 0.0, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 300}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 4.498081479362646
+MSE: 67.93872043221108
+RMSE: 8.242494794187685
+r2score: 0.9828636780779337
+
+--- 7959.243404150009 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 1)
+(604800,)
+(436800, 1)
+(436800,)
+(168000, 1)
+
+Heloo every one,this is a grid search on ([0] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+Best parameters & score set found on development set:
+
+-0.11699975160801039
+{'gamma': 0.0, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 300}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.4925154871065445
+MSE: 26.0007841238023
+RMSE: 5.099096402677861
+r2score: 0.9934417692276645
+
+--- 7940.471004247665 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 2)
+(604800,)
+(436800, 2)
+(436800,)
+(168000, 2)
+
+Heloo every one,this is a grid search on ([0, 11] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 271.4min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.2min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 15.3min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 36.1min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 73.7min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 118.0min
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 132.0min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 15.4min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 36.2min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 73.5min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 117.7min
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 131.7min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  3.8min
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 23.8min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 58.8min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 109.6min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 167.2min
+Best parameters & score set found on development set:
+
+-0.11313292954070907
+{'gamma': 0.4, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.4481975677394088
+MSE: 24.287153842136718
+RMSE: 4.928199858177093
+r2score: 0.9938740016861978
+
+--- 11220.72872710228 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 2] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 186.9min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 32.1min
+[Parallel(n_jobs=3)]: Done 444 tasks      | elapsed: 82.2min
+[Parallel(n_jobs=3)]: Done 794 tasks      | elapsed: 155.1min
+[Parallel(n_jobs=3)]: Done 1244 tasks      | elapsed: 236.0min
+Best parameters & score set found on development set:
+
+-0.10701034863515979
+{'gamma': 0.2, 'max_depth': 5, 'min_child_weight': 5, 'n_estimators': 50}
+
+Grid scores on development set:
+
+
+Testing Set: 
+MAE: 2.1313924973564053
+MSE: 19.218528635503837
+RMSE: 4.38389423178797
+r2score: 0.995152471352547
+
+--- 15939.739611625671 seconds ---
+
+Humid
+
+(216, 12, 70, 40)
+(216, 2)
+(604800, 4)
+(604800,)
+(436800, 4)
+(436800,)
+(168000, 4)
+
+Heloo every one,this is a grid search on ([0, 11, 1, 10] features, Month Ahead: 1
+
+GridSearchCV(cv=TimeSeriesSplit(max_train_size=None, n_splits=3),
+             error_score=nan,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, gamma=None,
+                                    gpu_id=None, importance_type='gain',
+                                    interaction_constraints=None,
+                                    learning_rate=None, max_delta_step=None,
+                                    max_depth=None, min_child_weight=None,...
+                                    reg_lambda=None, scale_pos_weight=None,
+                                    subsample=None, tree_method=None,
+                                    validate_parameters=False, verbose=1,
+                                    verbosity=None),
+             iid='deprecated', n_jobs=3,
+             param_grid={'gamma': [0.0, 0.1, 0.2, 0.3, 0.4],
+                         'max_depth': [3, 4, 5, 6, 8, 10],
+                         'min_child_weight': [1, 3, 5],
+                         'n_estimators': [50, 100, 200, 300, 600]},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring='neg_mean_absolute_error', verbose=1)
+Fitting 3 folds for each of 450 candidates, totalling 1350 fits
+[Parallel(n_jobs=3)]: Done 1350 out of 1350 | elapsed: 265.4min finished
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+/opt/anaconda3/lib/python3.7/site-packages/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+[Parallel(n_jobs=3)]: Done  44 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=3)]: Done 194 tasks      | elapsed: 32.0min
+slurmstepd: error: *** JOB 1550 ON worker10 CANCELLED AT 2020-11-28T11:32:11 ***
